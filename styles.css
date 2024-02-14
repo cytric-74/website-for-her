@@ -1,0 +1,124 @@
+.reenie-beanie-regular {
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nothing-you could do-regular {
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+  font-family:"Reenie Beanie", cursive;
+  background-color: #ffffff;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  --glow-color: rgb(255, 255, 255);
+  color: rgba(53, 122, 117, 0.781);
+  text-shadow: 5px 5px 10px var(--glow-color);
+  font-size: 60px;
+  font-family:"Reenie Beanie", cursive;
+}
+
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.yesButton {
+  margin-right: 60px;
+}
+
+button {
+  --glow-color: rgba(255, 255, 255, 0.877);
+  --glow-spread-color: rgba(202, 202, 202, 0.541);
+  --enhanced-glow-color: rgb(255, 255, 255);
+  --btn-color: rgba(42, 124, 106, 0.61);
+  border: 0.1em solid var(--glow-color);
+  padding: 0.4em 1.3em;
+  color: var(--glow-color);
+  font-size: 23px;
+  font-family:"Reenie Beanie", cursive;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 40em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 1em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.5s;
+ }
+ 
+ button::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: .7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+ }
+ 
+ button:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 2em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+ }
+ 
+ button:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+         0 0 2.5em 2em var(--glow-spread-color),
+         inset 0 0 .5em .25em var(--glow-color);
+ }
+/*button {
+  padding: 10px 20px;
+  border-radius: 100px;
+  font-size: 18px;
+  margin: 20px;
+  position: center;
+  top: 20%;
+  left: 10%;
+  display: inline-flex; 
+  cursor: pointer;
+} */
+
+
+#noButton {
+  position: relative;
+}
+.giveursizes {
+  margin-top: 260px;
+  font-size: 35px;
+  font-family: "Nothing You Could Do", cursive;
+  color: rgba(46, 46, 46, 0.863);
+  text-shadow: none;
+  text-align: center;
+}
+.addbg {
+  background: url(https://i.pinimg.com/originals/fd/cd/49/fdcd496f2644da005793c09cc10cbd68.gif); 
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+}
